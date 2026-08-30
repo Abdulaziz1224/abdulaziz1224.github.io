@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdulaziz Abdurashidov — Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer in Tashkent. React, Next.js, NestJS, React Native, Laravel. I build marketplace, CRM and automation systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-card: #161b22;
+    --border: #2d333b;
+    --text: #e6edf3;
+    --text-dim: #9198a1;
+    --accent: #4ade80;
+    --accent-dim: #16a34a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 80px 0 56px; }
+  .hero { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+  .hero img {
+    width: 128px; height: 128px; border-radius: 50%;
+    border: 3px solid var(--border); object-fit: cover;
+  }
+  .hero h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; }
+  .hero .title { color: var(--accent); font-weight: 600; margin-top: 4px; }
+  .hero .loc { color: var(--text-dim); font-size: 0.95rem; margin-top: 2px; }
+  .links { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .links a {
+    display: inline-block; padding: 8px 16px; border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); text-decoration: none;
+    font-size: 0.9rem; font-weight: 500; transition: all .15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  .pitch { margin-top: 32px; max-width: 720px; color: var(--text-dim); font-size: 1.05rem; }
+  .pitch strong { color: var(--text); }
+
+  section { padding: 40px 0; }
+  h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 24px; }
+  h2 span { color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;
+  }
+  .card img { width: 100%; aspect-ratio: 16/8; object-fit: cover; object-position: top; border-bottom: 1px solid var(--border); }
+  .card .body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+  .card h3 { font-size: 1.05rem; font-weight: 700; }
+  .card h3 a { color: var(--text); text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p { color: var(--text-dim); font-size: 0.92rem; margin-top: 8px; flex: 1; }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 0.75rem; font-weight: 500; color: var(--accent);
+    background: rgba(74, 222, 128, 0.08); border: 1px solid rgba(74, 222, 128, 0.25);
+    padding: 2px 10px; border-radius: 999px;
+  }
+
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .app {
+    display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+    text-decoration: none; color: var(--text); transition: border-color .15s;
+  }
+  .app:hover { border-color: var(--accent); }
+  .app .ic { font-size: 1.5rem; }
+  .app b { display: block; font-size: 0.95rem; }
+  .app small { color: var(--text-dim); font-size: 0.8rem; }
+
+  .stack { display: flex; flex-wrap: wrap; gap: 8px; }
+  .stack span {
+    padding: 7px 14px; background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; font-size: 0.88rem; color: var(--text-dim);
+  }
+
+  footer { padding: 56px 0 72px; border-top: 1px solid var(--border); margin-top: 40px; }
+  footer p { color: var(--text-dim); }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    header { padding: 48px 0 32px; }
+    .hero h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="hero">
+    <img src="img/avatar.png" alt="Abdulaziz Abdurashidov">
+    <div>
+      <h1>Abdulaziz Abdurashidov</h1>
+      <div class="title">Full-Stack Developer — React / Next.js / NestJS / React Native / Laravel</div>
+      <div class="loc">📍 Tashkent, Uzbekistan · open to remote</div>
+      <div class="links">
+        <a href="https://github.com/Abdulaziz1224">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdulazizabdurashidov">LinkedIn</a>
+        <a href="mailto:navoiy498@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+  <p class="pitch">
+    I build products that real businesses run on: <strong>e-commerce marketplaces, CRMs, logistics tools and automation systems</strong>.
+    Most of my work lives in private company and client repositories — this page shows what I actually ship.
+  </p>
+</header>
+
+<section class="wrap">
+  <h2><span>#</span> Featured work</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="img/stok-storefront.jpg" alt="Stok.uz marketplace storefront">
+      <div class="body">
+        <h3><a href="https://stok.uz" target="_blank" rel="noopener">Stok.uz — E-commerce Marketplace</a></h3>
+        <p>End-to-end marketplace platform for the Uzbek market: Next.js customer storefront, React seller &amp; admin dashboards, a logistics hub for warehouses and couriers, and React Native mobile apps — backed by a Laravel REST API with MySQL, Redis and Typesense.</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TanStack</span><span class="tag">Laravel</span><span class="tag">Redis</span><span class="tag">Docker</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/bidhub.jpg" alt="BidHub reverse-auction marketplace">
+      <div class="body">
+        <h3>BidHub — Reverse-Auction Marketplace</h3>
+        <p>Buyers post what they need, sellers compete to win the job. Next.js + TypeScript, Prisma + PostgreSQL, BullMQ + Redis background workers, S3 media storage and a Telegram bot for bidding on the go. Vitest &amp; Playwright tested.</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Prisma</span><span class="tag">BullMQ</span><span class="tag">S3</span><span class="tag">Telegram Bot</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <h3>MoySklad MCP Server — AI Analytics Assistant</h3>
+        <p>A Model Context Protocol server that connects AI assistants to a retailer's live MoySklad ERP data — inventory, sales, customers, debts, cash flow and purchasing. Curated analytics tools plus a raw API tool, secured with bearer-token auth, so the team can ask questions about live business data in plain language.</p>
+        <div class="tags"><span class="tag">MCP</span><span class="tag">Node.js</span><span class="tag">AI Integration</span><span class="tag">LLM</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="body">
+        <h3><a href="https://github.com/Abdulaziz1224/telegram-otp-service" target="_blank" rel="noopener">Telegram OTP Service — open source</a></h3>
+        <p>Phone-number verification via a Telegram bot: a third-party app requests verification, the user confirms their number through the bot, the app polls the result. Node.js, TypeScript, Prisma, PostgreSQL.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">grammY</span><span class="tag">Open Source</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2><span>#</span> Mobile apps I build &amp; ship</h2>
+  <div class="apps">
+    <a class="app" href="https://play.google.com/store/apps/details?id=com.yuzka.stokcourier" target="_blank" rel="noopener">
+      <span class="ic">🚚</span><span><b>Stok Courier</b><small>React Native / Expo · Google Play</small></span>
+    </a>
+    <a class="app" href="https://play.google.com/store/apps/details?id=com.warehouse.stokmarket" target="_blank" rel="noopener">
+      <span class="ic">📦</span><span><b>Stok Warehouse</b><small>React Native / Expo · Google Play</small></span>
+    </a>
+    <a class="app" href="https://play.google.com/store/apps/details?id=app.stok.selleruz" target="_blank" rel="noopener">
+      <span class="ic">🏪</span><span><b>Stok Seller</b><small>React Native / Expo · Google Play</small></span>
+    </a>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2><span>#</span> Stack</h2>
+  <div class="stack">
+    <span>TypeScript</span><span>React</span><span>Next.js</span><span>NestJS</span><span>Node.js</span>
+    <span>React Native / Expo</span><span>Tailwind CSS</span><span>Laravel / PHP</span>
+    <span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>Prisma</span>
+    <span>Docker</span><span>CI/CD</span><span>MCP / AI integrations</span><span>Telegram Bots</span>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>Have a project in mind? Reach me at <a href="mailto:navoiy498@gmail.com">navoiy498@gmail.com</a> or on <a href="https://www.linkedin.com/in/abdulazizabdurashidov">LinkedIn</a>.</p>
+</footer>
+
+</body>
+</html>
